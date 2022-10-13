@@ -1,5 +1,11 @@
+@font-face {
+    font-family: calculadora;
+    src: url('Calculator.ttf');
+}
 main{
     margin-top: 150px;
+    box-shadow: 5px 5px 5px 5px rgb(6, 6, 80);
+    border-radius: 10px 10px;
 }
 #calculadora{
     display: grid;
@@ -10,16 +16,38 @@ main{
     width: 400px;
     font-size: 50px;
     background-color: #6382BF;
-    color: white;
-
+    color: rgba(255, 255, 255, 0.76);
+    box-shadow: none;
+}
+div {
+    border-radius: 25px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 2px white;
 }
 #visor{
     grid-column: 1/ span 4;
     grid-row: 1;
+    background-color:rgba(6, 6, 80, 0.639);
+}
+.numeros{
+    background-color: #6382BF;
+}
+#ponto{
+    background-color: #6382BF
 }
 #C{
     grid-column: 1/ span 2;
     grid-row: 2;
+    background-color: #214da68a;
+}
+#porcentagem{
+    background-color: #214da68a;
+}
+.operacao{
+    background-color: #214DA6;
+}
+#soma{
+    background-color: #214da68a;
 }
 #calculadora > #soma{
     grid-row: 5/ span 2;
@@ -35,7 +63,11 @@ body{
     display: flex;
     justify-content: center;
     background-color: #6382BF;
+    font-family: calculadora;
 }
-div:hover{
+.numeros:hover{
  background-color: #214DA6;
+}
+.operacao:hover{
+    background-color: #6382BF
 }
