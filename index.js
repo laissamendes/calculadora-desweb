@@ -107,8 +107,10 @@ function pressionou_tecla(event) {
     } else if (event.key === "+") {
         document.getElementById("soma").click();
     } else if (event.key === "%") {
-        document.getElementById("porcentagem").click();
-    } else if (event.key === "=" || event.key === "Enter") {
+        document.getElementById("porcentagem").click();}
+        else if (event.key === "-") {
+            document.getElementById("menos").click();} 
+    else if (event.key === "=" || event.key === "Enter") {
         document.getElementById("igual").click();
     } else if (event.key === ".") {
         document.getElementById("ponto").click();
